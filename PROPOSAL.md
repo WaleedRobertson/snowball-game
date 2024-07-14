@@ -11,7 +11,7 @@ Incorrect Answer Process: If user guesses incorrectly wrong answer notice will a
 
 ## Wire Frames: 
 
-![wire-frame](./)
+![wire-frame](./Assets/0%203.jpg)
 ![wire-frame2.0](./Assets/0%202.jpg)
 
 
