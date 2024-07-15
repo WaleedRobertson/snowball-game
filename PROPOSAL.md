@@ -34,6 +34,12 @@ Loop through that (data) array returning and displaying random questions
 	As a user, I want to select an answer for a trivia question, so that I can proceed to the next question.
     * MVP Criteria: Clicking an answer should highlight the selected option and enable a "Next" button.
 Questions will be elements with click eventlisteners
+1. let userChoice;
+2. let correctAnswer;
+
+if (userChoice ==== correctAnswer){
+handler 
+}
 
 Game Mechanics
 
@@ -76,6 +82,71 @@ Wednsday, July 17- optimize JavaScript code; have a beta model
 Thursday, July 18- Final HTML content, CSS/ UI design and script; begin stretch content/ capabilities 
 
 Friday, July 19- Improved UI design; Final project complete
+
+PSEUDOCODE 
+
+```javascript
+//Define any variables used to track the state of the game
+let startGame; 
+let easyButton; 
+let mediumButton; 
+let difficultButton; 
+let easyQuestions; 
+let mediumQuestions; 
+let difficultQuestions;
+let userChoice;
+let currentQuestion; 
+let correctAnswer; 
+let incorrectAnswer; 
+let winningMetric;
+let winningCondition;
+let winningPage;
+let losingMetric; 
+let losingCondition; 
+let losingPage;
+let playAgainButton;  
+
+//Define the required constants:
+
+3 arrays of data coorelating with difficulty level selected 
+
+3 incorrectAnswers will create losingCondition 
+
+10 correctAnswers will create winningCondition
+
+//Handle a player clicking a button
+startGame button on landing page redirecting user to difficulty page
+
+(easyButton, mediumButton, difficultButton) > randomly output questions from easyQuestions, mediumQuestions and difficultQuestions
+
+clicking correctAnswer will redirect user to next question and enhance winningMetric 
+
+clicking one of the incorrectAnswers will keep user on current question and enhance the losingMetric
+
+clicking the playAgain button after losingConditions/ winningConditions are met will restart the game
+
+ //Handle generating random selections for the computer player
+
+the goal is to iterate through designated data set (easyQuestions, mediumQuestions or difficultQuestions) and return question in a random order
+
+//Compare the player choice to the computer choice, and check for a winner
+
+if userChoice is correctAnswer 
+if userChoice is incorrectAnswer
+
+// Render a win/lose/tie message to the player 
+
+losingCondition being met will redirect user to losingPage where  playAgain button will be present 
+
+winningCondition being met will redirect user to 
+winningPage where a playAgain button will be present 
+ 
+
+
+
+
+
+```
 
 
 

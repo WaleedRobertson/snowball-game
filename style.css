@@ -49,7 +49,7 @@ main {
 }
 
 .planet:hover {
-    transform: scale(2.0t);
+    transform: scale(2.0);
 }
 
 .earth {
