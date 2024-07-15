@@ -79,9 +79,13 @@ Tuesday, July 16- HTML Content & CSS Design, begin Pseudo JavaScript code for us
 
 Wednsday, July 17- optimize JavaScript code; have a beta model
 
-Thursday, July 18- Final HTML content, CSS/ UI design and script; begin stretch content/ capabilities 
+Thursday, July 18- Final HTML content, CSS/ UI design and script; begin stretch goals/ capabilities 
 
 Friday, July 19- Improved UI design; Final project complete
+
+Saturday, July 20 - stretch goals and polishing of code
+
+Sunday, July 21 - stretch goals
 
 PSEUDOCODE 
 
@@ -127,14 +131,14 @@ clicking the playAgain button after losingConditions/ winningConditions are met 
 
  //Handle generating random selections for the computer player
 
-the goal is to iterate through designated data set (easyQuestions, mediumQuestions or difficultQuestions) and return question in a random order
+the goal is to iterate through designated data set (easyQuestions, mediumQuestions or difficultQuestions) and return currentQuestion in a random order
 
 //Compare the player choice to the computer choice, and check for a winner
 
-if userChoice is correctAnswer 
-if userChoice is incorrectAnswer
+if userChoice is correctAnswer proceed to next currentQuestion  
+if userChoice is incorrectAnswer stay on currentQuestion
 
-// Render a win/lose/tie message to the player 
+// Render a win/lose message to the player 
 
 losingCondition being met will redirect user to losingPage where  playAgain button will be present 
 
