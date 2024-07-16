@@ -28,9 +28,12 @@ main {
     margin-bottom: 50px;
 }
 
-.intro:hover {
-    color: yellow;
+#start-game-button:hover {
+    color: white;
+    background:#000; 
     cursor: pointer;
+    
+
 }
 
 

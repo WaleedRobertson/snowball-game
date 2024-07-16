@@ -55,3 +55,16 @@
  
 
 
+/*-------------------------------- Constants --------------------------------*/
+
+/*-------------------------------- Variables --------------------------------*/
+
+/*------------------------ Cached Element References ------------------------*/
+const startGameButton = document.querySelector("#start-game-button");
+
+/*-------------------------------- Functions --------------------------------*/
+
+/*----------------------------- Event Listeners -----------------------------*/
+startGameButton.addEventListener('click', () => {
+    window.location.href = "./Difficulty-level-page.html";
+})
