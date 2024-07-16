@@ -52,18 +52,28 @@ main {
     transform: scale(2.0);
 }
 
-.earth {
+#easy-button {
     background-color: blue;
 }
+#easy-button:hover {
+    transform: scale(2.0);
+    cursor: pointer;
+}
 
-.mars {
+#medium-button {
     background-color: red;
 }
-
-.jupiter {
+#medium-button:hover {
+    transform: scale(2.0);
+    cursor: pointer;
+}
+#difficult-button {
     background-color: orange;
 }
-
+#difficult-button:hover {
+    transform: scale(2.0);
+    cursor: pointer; 
+}
 footer {
     text-align: center;
     padding: 10px 0;

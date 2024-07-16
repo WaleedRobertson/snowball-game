@@ -1,8 +1,8 @@
 //Define any variables used to track the state of the game
-// let startGame; 
-// let easyButton; 
-// let mediumButton; 
-// let difficultButton; 
+// let startGame; DONE
+// let easyButton; DONE
+// let mediumButton; DONE
+// let difficultButton; DONE
 // let easyQuestions; 
 // let mediumQuestions; 
 // let difficultQuestions;
@@ -27,7 +27,7 @@
 // 10 correctAnswers will create winningCondition
 
 //Handle a player clicking a button
-// startGame button on landing page redirecting user to difficulty page //anchor tag
+// startGame button on landing page redirecting user to difficulty page //DONE USING A DOM EVENT
 
 // (easyButton, mediumButton, difficultButton) > randomly output questions from easyQuestions, mediumQuestions and difficultQuestions //math.randon()
 
@@ -61,6 +61,12 @@
 
 /*------------------------ Cached Element References ------------------------*/
 const startGameButton = document.querySelector("#start-game-button");
+const easyButton = document.querySelector('#easy-button');
+console.dir(easyButton)
+const mediumButton = document.querySelector('#medium-button');
+console.dir(mediumButton)
+const difficultButton = document.querySelector('#difficult-button')
+console.dir(difficultButton)
 
 /*-------------------------------- Functions --------------------------------*/
 
