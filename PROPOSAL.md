@@ -65,7 +65,7 @@ User Experience
 
 
 
-Friday, July 12   - Upload rough draft of wire frame, produce detailed imagery of UI & begin pseudo coding
+Friday, July 12   - Upload rough draft of wire frame, produce detailed imagery of UI & begigin pseudo coding
 
 Saturday, July 13     - 
 
