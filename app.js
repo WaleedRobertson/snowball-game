@@ -84,3 +84,4 @@ mediumButton?.addEventListener('click', () => {
 difficultButton?.addEventListener('click', () => {
     window.location.href = "./questions.html";
 })
+
