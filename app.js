@@ -63,7 +63,6 @@
 const startGameButton = document.querySelector("#start-game-button");
 const easyButton = document.querySelector('#easy-button');
 const mediumButton = document.querySelector('#medium-button');
-console(dir) 
 const difficultButton = document.querySelector('#difficult-button');
 
 
