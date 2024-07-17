@@ -3,9 +3,9 @@
 // let easyButton; DONE
 // let mediumButton; DONE
 // let difficultButton; DONE
-// let easyQuestions; 
-// let mediumQuestions; 
-// let difficultQuestions;
+// let easyQuestions; DONE
+// let mediumQuestions; DONE 
+// let difficultQuestions; DONE
 // let userChoice;
 // let currentQuestion; 
 // let correctAnswer; 
@@ -69,19 +69,18 @@ const difficultButton = document.querySelector('#difficult-button');
 /*-------------------------------- Functions --------------------------------*/
 
 /*----------------------------- Event Listeners -----------------------------*/
-startGameButton.addEventListener('click', () => {
+startGameButton?.addEventListener('click', () => {
     window.location.href = "./Difficulty-level-page.html";
 })
 
-// I NEED TO GET THESE BUTTONS TO WORK!!!!!!!!!!!!!
-// easyButton.addEventListener('click', () => {
-//     window.location.href = "./questions.html";
-// })
+easyButton?.addEventListener('click', () => {
+    window.location.href = "./questions.html";
+})
 
-// mediumButton.addEventListener('click', () => {
-//     window.location.href = "./questions.html";
-// })
+mediumButton?.addEventListener('click', () => {
+    window.location.href = "./questions.html";
+})
 
-// difficultButton.addEventListener('click', () => {
-//     window.location.href = "./questions.html";
-// })
+difficultButton?.addEventListener('click', () => {
+    window.location.href = "./questions.html";
+})
