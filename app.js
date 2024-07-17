@@ -62,11 +62,10 @@
 /*------------------------ Cached Element References ------------------------*/
 const startGameButton = document.querySelector("#start-game-button");
 const easyButton = document.querySelector('#easy-button');
-console.dir(easyButton)
 const mediumButton = document.querySelector('#medium-button');
-console.dir(mediumButton)
-const difficultButton = document.querySelector('#difficult-button')
-console.dir(difficultButton)
+console(dir) 
+const difficultButton = document.querySelector('#difficult-button');
+
 
 /*-------------------------------- Functions --------------------------------*/
 
@@ -74,3 +73,16 @@ console.dir(difficultButton)
 startGameButton.addEventListener('click', () => {
     window.location.href = "./Difficulty-level-page.html";
 })
+
+// I NEED TO GET THESE BUTTONS TO WORK!!!!!!!!!!!!!
+// easyButton.addEventListener('click', () => {
+//     window.location.href = "./questions.html";
+// })
+
+// mediumButton.addEventListener('click', () => {
+//     window.location.href = "./questions.html";
+// })
+
+// difficultButton.addEventListener('click', () => {
+//     window.location.href = "./questions.html";
+// })
