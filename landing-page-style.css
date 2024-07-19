@@ -25,12 +25,11 @@ main {
 
 .intro {
     text-align: center;
-    margin-bottom: 50px;
+
 }
 
 #start-game-button:hover {
-    color: white;
-    background:#000; 
+    transform: scale(3.0);
     cursor: pointer;
     
 

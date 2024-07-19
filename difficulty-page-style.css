@@ -53,25 +53,26 @@ main {
 }
 
 #easy-button {
-    background-color: blue;
+    
+    cursor: pointer;
 }
 #easy-button:hover {
-    transform: scale(2.0);
+    transform: scale(3.0);
     cursor: pointer;
 }
 
 #medium-button {
-    background-color: red;
+    
 }
 #medium-button:hover {
-    transform: scale(2.0);
+    transform: scale(3.0);
     cursor: pointer;
 }
 #difficult-button {
-    background-color: orange;
+    
 }
 #difficult-button:hover {
-    transform: scale(2.0);
+    transform: scale(3.0);
     cursor: pointer; 
 }
 footer {

@@ -7,7 +7,7 @@
 // let mediumQuestions; DONE 
 // let difficultQuestions; DONE
 // let userChoice;
-// let currentQuestion; 
+// let currentQuestion; DONE
 // let correctAnswer; 
 // let incorrectAnswer; 
 // let winningMetric;
@@ -58,15 +58,20 @@
 /*-------------------------------- Constants --------------------------------*/
 
 /*-------------------------------- Variables --------------------------------*/
-
+let currentQuestion 
 /*------------------------ Cached Element References ------------------------*/
 const startGameButton = document.querySelector("#start-game-button");
 const easyButton = document.querySelector('#easy-button');
 const mediumButton = document.querySelector('#medium-button');
 const difficultButton = document.querySelector('#difficult-button');
+const questionStage = document.querySelector('.question-stage');
 
 
 /*-------------------------------- Functions --------------------------------*/
+for (i = 0; i < easyQuestions.length; i++){
+currentQuestion = easyQuestions[i]
+//append current question to questionstage 
+}
 
 /*----------------------------- Event Listeners -----------------------------*/
 startGameButton?.addEventListener('click', () => {
@@ -85,3 +90,10 @@ difficultButton?.addEventListener('click', () => {
     window.location.href = "./questions.html";
 })
 
+//add event listeners to the incorrect and correct answers 
+
+
+
+//Whats happening when user clicks on difficulty button: redirected tp questions page DONE 
+//Loop through data set (easyQuestions, mediumQuestions and difficultQuestions) and display on the questions.html 
+//Each value of array (questions and answers) to display on display box automatically upon redirection to the question page 
