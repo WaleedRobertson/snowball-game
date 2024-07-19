@@ -67,10 +67,11 @@ const difficultButton = document.querySelector('#difficult-button');
 const questionStage = document.querySelector('.question-stage');
 
 
+
 /*-------------------------------- Functions --------------------------------*/
 for (i = 0; i < easyQuestions.length; i++){
 currentQuestion = easyQuestions[i]
-//append current question to questionstage 
+questionStage.appendChild()
 }
 
 /*----------------------------- Event Listeners -----------------------------*/
