@@ -1,7 +1,7 @@
 // Data sets are chatGPT generated 
 
 
-    easyQuestions = [
+  /*  export */ easyQuestions = [
       {
         question: "What does HTML stand for?",
         answer: "HyperText Markup Language"
@@ -45,7 +45,7 @@
     ]
 
     
-    mediumQuestions = [
+    /* export*/ mediumQuestions = [
           {
             question: "What is the purpose of the 'data-' attribute in HTML5?",
             answer: "The 'data-' attribute is used to store custom data private to the page or application."
@@ -88,7 +88,7 @@
           }
         ]
 
-         difficultQuestions = [
+          /* export */ difficultQuestions = [
             {
                 question: "What does the acronym HTML stand for?",
                 answer: "HyperText Markup Language"
