@@ -1,1 +1,1 @@
-# snowball-game
+# trivia-game
