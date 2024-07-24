@@ -50,6 +50,7 @@ body {
 
 .hud-main-text {
     text-align: center;
+    color: #bd0505;
 }
 
 #progressBar {

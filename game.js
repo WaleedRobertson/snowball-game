@@ -1,12 +1,14 @@
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('#score');
+const scoreText = document.querySelector('.hud-main-text');
 const progressBarFull = document.querySelector('#progressBarFull');
+const scoreElement = document.getElementById("score");
+console.dir(scoreElement)
 
 let currentQuestion = {}
 let acceptingAnswers = true
-let score = 0
+let score = 0;
 let questionCounter = 0
 let availableQuestions = []
 
@@ -154,9 +156,14 @@ choices.forEach(choice => {
 })
 
 
-incrementScore = num => {
-    score +=num
-    scoreText.innerText = score
+// incrementScore = num => {
+//     score +=num
+//     scoreText.innerText = score
+// }
+
+function incrementScore(points) {
+    score += points || 1;
+    scoreElement.textContent = score;
 }
 
 startGame()
