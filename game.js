@@ -1,10 +1,9 @@
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('.hud-main-text');
+const scoreElement = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
-const scoreElement = document.getElementById("score");
-console.dir(scoreElement)
+
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -19,7 +18,7 @@ let questions = [
         choice2: "print('Hello World')",
         choice3: "log.console('Hello World')",
         choice4: "console.log('Hello World')",
-        answer: "console.log('Hello World')",
+        answer: 4,
     },
     {
         question: 'Which of the following is a JavaScript data type?',
@@ -27,7 +26,7 @@ let questions = [
         choice2: 'string',
         choice3: 'double',
         choice4: 'char',
-        answer: 'string',
+        answer: 2,
     },
     {
         question: 'Which symbol is used for single-line comments in JavaScript?',
@@ -35,7 +34,7 @@ let questions = [
         choice2: '#',
         choice3: '<!-- -->',
         choice4: '/* */',
-        answer: '//',
+        answer: 1 ,
     },
     {
         question: 'How do you declare a variable in JavaScript?',
@@ -43,7 +42,7 @@ let questions = [
         choice2: 'variable myVar;',
         choice3: 'v myVar;',
         choice4: 'myVar = var;',
-        answer: 'var myVar;',
+        answer: 1 ,
     },
     {
         question: 'Which method is used to convert a JSON string into a JavaScript object?',
@@ -59,7 +58,7 @@ let questions = [
         choice2: 'true',
         choice3: 'undefined',
         choice4: 'null',
-        answer: 'true',
+        answer: 2 ,
     },
     {
         question: 'Which of the following is the correct way to create an array in JavaScript?',
@@ -67,7 +66,7 @@ let questions = [
         choice2: 'var arr = array(1, 2, 3, 4)',
         choice3: 'var arr = [1, 2, 3, 4]',
         choice4: 'var arr = (1, 2, 3, 4)',
-        answer: 'var arr = [1, 2, 3, 4]',
+        answer: 3,
     },
     {
         question: 'What is the output of the following code: console.log(typeof [])?',
@@ -75,7 +74,7 @@ let questions = [
         choice2: 'array',
         choice3: 'null',
         choice4: 'undefined',
-        answer: 'object',
+        answer: 2,
     },
     {
         question: 'How do you create a function in JavaScript?',
@@ -83,7 +82,7 @@ let questions = [
         choice2: 'create myFunction() {}',
         choice3: 'def myFunction() {}',
         choice4: 'new function myFunction() {}',
-        answer: 'function myFunction() {}',
+        answer: 1 ,
     },
     {
         question: 'Which event occurs when the user clicks on an HTML element?',
@@ -91,12 +90,12 @@ let questions = [
         choice2: 'onchange',
         choice3: 'onclick',
         choice4: 'onmouseclick',
-        answer: 'onclick',
+        answer: 3 ,
     }
 ]
 
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 10
+const scorePoints = 100
+const maxQuestions = 10
 
 startGame = () => {
     questionCounter = 0
@@ -106,15 +105,15 @@ startGame = () => {
 }
 
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    if(availableQuestions.length === 0 || questionCounter > maxQuestions) {
         localStorage.setItem('mostRecentScore', score)
 
         return window.location.assign('/end.html')
     }
 
     questionCounter++
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    progressText.innerText = `Question ${questionCounter} of ${maxQuestions}`
+    progressBarFull.style.width = `${(questionCounter/maxQuestions) * 100}%`
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
@@ -142,8 +141,8 @@ choices.forEach(choice => {
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
-        if(classToApply === 'corect') {
-            incrementScore(SCORE_POINTS)
+        if(classToApply === 'correct') {
+            incrementScore(scorePoints)
         }
 
         selectedChoice.parentElement.classList.add(classToApply)

@@ -1,5 +1,5 @@
 const username = document.querySelector('#username')
-const saveScoreButton = document.querySelector('.saveScoreBtn')
+const saveScoreButton = document.querySelector('#saveScoredBtn')
 const finalScore = document.querySelector('#finalScore')
 const mostRecentScore = document.querySelector('#mostRecentScore')
 
