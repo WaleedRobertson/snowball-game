@@ -50,7 +50,7 @@ let questions = [
         choice2: 'JSON.stringify()',
         choice3: 'JSON.objectify()',
         choice4: 'JSON.convert()',
-        answer: 'JSON.parse()',
+        answer: 1,
     },
     {
         question: 'What will the following code return: Boolean(10 > 9)?',
@@ -143,6 +143,11 @@ choices.forEach(choice => {
 
         if(classToApply === 'correct') {
             incrementScore(scorePoints)
+        }
+
+        else {
+            
+            window.location.href = "/index.html"; 
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
