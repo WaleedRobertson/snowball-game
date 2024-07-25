@@ -166,7 +166,7 @@ choices.forEach(choice => {
 //     scoreText.innerText = score
 // }
 
-function incrementScore(points) {
+incrementScore = (points) => {
     score += points || 1;
     scoreElement.textContent = score;
 }

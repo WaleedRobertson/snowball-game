@@ -6,7 +6,8 @@
 
 # This is an epic trivia style game designed to test your Javascript knowledge. The goal of the game is to answer all of the questions correctly. One incorrect answer leads to a restarting the game.
 
-# External resources: ChatGPT
+# Attributions
+External resources: ChatGPT
 
 # Technologies: Javascript, HTML, CSS
 
