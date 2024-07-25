@@ -97,14 +97,14 @@ let questions = [
 const scorePoints = 100
 const maxQuestions = 10
 
-startGame = () => {
+const startGame = () => {
     questionCounter = 0
     score = 0
     availableQuestions = [...questions]
     getNewQuestion()
 }
 
-getNewQuestion = () => {
+const getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > maxQuestions) {
         localStorage.setItem('mostRecentScore', score)
 
@@ -166,7 +166,7 @@ choices.forEach(choice => {
 //     scoreText.innerText = score
 // }
 
-incrementScore = (points) => {
+const incrementScore = (points) => {
     score += points || 1;
     scoreElement.textContent = score;
 }
