@@ -133,7 +133,8 @@ getNewQuestion = () => {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return
+        if(!acceptingAnswers) 
+        return
 
         acceptingAnswers = false
         const selectedChoice = e.target
@@ -146,7 +147,7 @@ choices.forEach(choice => {
         }
 
         else {
-            
+
             window.location.href = "/index.html"; 
         }
 
